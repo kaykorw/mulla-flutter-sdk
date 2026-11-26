@@ -1,0 +1,21 @@
+name: mulla_flutter_example
+description: Example app for mulla_flutter.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mulla_flutter:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
