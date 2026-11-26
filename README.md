@@ -2,7 +2,7 @@
 
 <!-- x-release-please-start-version -->
 
-> This guide applies to `mulla_flutter` **0.1.0** and the Mulla API **v1**.
+> This guide applies to `mulla_flutter` **0.1.1** and the Mulla API **v1**.
 
 <!-- x-release-please-end -->
 

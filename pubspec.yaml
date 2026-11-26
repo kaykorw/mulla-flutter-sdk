@@ -1,6 +1,6 @@
 name: mulla_flutter
 description: Accept MTN Mobile Money and Airtel Money in Flutter apps with Mulla. Ready-made checkout widgets on a key-less client; your backend creates the session.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/kaykorw/mulla-flutter-sdk
 repository: https://github.com/kaykorw/mulla-flutter-sdk
 issue_tracker: https://github.com/kaykorw/mulla-flutter-sdk/issues
