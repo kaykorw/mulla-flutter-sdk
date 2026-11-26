@@ -1,3 +1,5 @@
+// material_ui needs Flutter 3.47+; this package supports 3.27+. Switch once the minimum is 3.47.
+// ignore: deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -7,6 +9,7 @@ import 'package:mulla_flutter/testing.dart';
 Widget app(Widget child, {Locale locale = const Locale('en')}) => MaterialApp(
       locale: locale,
       supportedLocales: const [Locale('en'), Locale('fr')],
+      // ignore: deprecated_member_use
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
       home: Scaffold(body: SingleChildScrollView(child: child)),
     );

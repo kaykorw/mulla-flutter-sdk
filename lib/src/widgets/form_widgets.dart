@@ -1,3 +1,5 @@
+// material_ui needs Flutter 3.47+; this package supports 3.27+. Switch once the minimum is 3.47.
+// ignore: deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mulla_dart/mulla_dart.dart';
