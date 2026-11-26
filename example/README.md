@@ -1,17 +1,28 @@
-# mulla_flutter_example
+# mulla_flutter example
 
-A new Flutter project.
+A small app that shows the Mulla checkout in action. It runs on Android, iOS and the web.
 
-## Getting Started
+## Run it
 
-This project is a starting point for a Flutter application.
+```bash
+cd example
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+## What you can try
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+**Demo (no account needed).** Tap **Open demo checkout**. The app uses a fake Mulla server that runs inside the app, so nothing goes over the network:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Enter any MTN number (078 or 079): the fake customer approves after 3 seconds, and you see the success screen.
+- Enter an Airtel number (072 or 073): the payment is declined, and you see the failure screen.
+
+**Sandbox (real test payment).** Create a checkout session on your backend with a test key (`sk_test_…`), then paste its id and token into the app and tap **Pay sandbox session**. To use a local Mulla server, fill in its address. From the Android emulator, use `http://10.0.2.2:<port>/gateway`.
+
+## Where to look
+
+Everything is in [lib/main.dart](lib/main.dart):
+
+- `_demo()` and `_sandbox()` open the checkout with `showMullaCheckout`.
+- `demoClient()` builds the fake server with `fakeMullaPublicClient()` from `package:mulla_flutter/testing.dart`. Your own tests can use it the same way.
+
+See the [package README](../README.md) for the full guide.

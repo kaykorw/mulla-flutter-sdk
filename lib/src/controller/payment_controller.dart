@@ -169,8 +169,6 @@ abstract class MullaPaymentController extends ChangeNotifier with WidgetsBinding
 
   /// Moves to a new state reported by the server.
   @protected
-
-  /// Moves to a new state reported by the server.
   void apply(MullaPaymentState state) => _apply(state);
 
   void _apply(MullaPaymentState next) {

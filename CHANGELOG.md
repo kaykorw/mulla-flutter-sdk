@@ -6,4 +6,6 @@
 - The controller never stays stuck on loading or paying: any failure returns to a retryable error or the form.
 - Closing the sheet mid-payment stops all network work and timers.
 - Customers see a plain `unexpectedError` text instead of technical error details.
+- Requires `mulla_dart` 0.1.1 or newer.
+- Documents every widget parameter, controller member and theme option.
 - Re-exports `ApiServerException`, `InvalidArgumentException`, `RateLimitException` and `RequestCancelledException`.
